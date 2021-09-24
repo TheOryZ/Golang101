@@ -1,10 +1,10 @@
-package main
+package Pointers
 
 import (
 	"fmt"
 )
 
-func main() {
+func pointers() {
 	var myString string
 	myString = "Green"
 

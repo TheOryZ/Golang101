@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 var varMyString string //Kullanmamış olmamıza rağmen hata vermedi. Herhangi bir fonksiyon içerisinde olmadığı için.
 
@@ -20,6 +22,10 @@ func main() {
 	fmt.Println("What was said: ", saySomething())
 	fmt.Println("What was said again: ", whatWasSaid)
 	fmt.Println(whatWasSaidAgain, theOtherThingThatWasSaid)
+
+	//goModuls Examples..
+	//Pointers.pointers()
+
 }
 
 func saySomething() string {
