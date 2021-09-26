@@ -1,4 +1,4 @@
-package main
+package typesandstructs
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 
 var s = "seven"
 
-func main() {
+func process() {
 	s := "eight"
 	/*Aynı isimde bir başka değişkeni, alt fonksiyonlarda tanımlayabilirsin.
 	Daha içteki işlem bloğundaki tanımlama baskın gelecektir.

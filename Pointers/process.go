@@ -1,10 +1,10 @@
-package main
+package Pointers
 
 import (
 	"fmt"
 )
 
-func main() {
+func process() {
 	var myString string = "Green"
 
 	//log.Println("myString is set to", myString)

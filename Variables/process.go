@@ -1,4 +1,4 @@
-package main
+package variables
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 
 var varMyString string //Kullanmamış olmamıza rağmen hata vermedi. Herhangi bir fonksiyon içerisinde olmadığı için.
 
-func main() {
+func process() {
 
 	fmt.Println("Hello World!")
 
