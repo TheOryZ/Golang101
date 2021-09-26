@@ -1,4 +1,4 @@
-package TypesAndSturcts
+package main
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 
 var s = "seven"
 
-func typesAndSturcts() {
+func main() {
 	s := "eight"
 	/*Aynı isimde bir başka değişkeni, alt fonksiyonlarda tanımlayabilirsin.
 	Daha içteki işlem bloğundaki tanımlama baskın gelecektir.

@@ -1,12 +1,11 @@
-package Pointers
+package main
 
 import (
 	"fmt"
 )
 
-func pointers() {
-	var myString string
-	myString = "Green"
+func main() {
+	var myString string = "Green"
 
 	//log.Println("myString is set to", myString)
 	fmt.Println("myString is set to", myString)
