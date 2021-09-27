@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func process() {
+func Process() {
 	var myString string = "Green"
 
 	//log.Println("myString is set to", myString)

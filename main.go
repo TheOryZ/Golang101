@@ -1,12 +1,15 @@
 package main
 
 import (
-	//arrays "goModuls/Arrays"
 	"fmt"
 	functions "goModuls/Functions"
+	"goModuls/Pointers"
 	slice "goModuls/Slice"
+	"goModuls/maps"
+	"goModuls/ranges"
 	//conditionals "goModuls/Conditionals"
 	//loops "goModuls/Loops"
+	//arrays "goModuls/Arrays"
 )
 
 func main() {
@@ -20,4 +23,7 @@ func main() {
 	fmt.Println(functions.VariadicFunc(array_...))
 	fmt.Println(functions.VariadicFunc(1))
 	fmt.Println(functions.VariadicFunc())
+	Pointers.Process()
+	maps.Process()
+	ranges.Process()
 }
