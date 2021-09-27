@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"goModuls/closures"
+	"goModuls/recursion"
 	// functions "goModuls/Functions"
 	// "goModuls/Pointers"
 	// slice "goModuls/Slice"
@@ -35,5 +36,7 @@ func main() {
 
 	newInts := closures.IntSeq()
 	fmt.Println(newInts())
+	fmt.Println("***********************")
+	fmt.Println(recursion.Fact(7))
 
 }
