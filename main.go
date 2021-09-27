@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"goModuls/closures"
-	"goModuls/recursion"
+	// "fmt"
+	// "goModuls/closures"
+	// "goModuls/recursion"
 	// functions "goModuls/Functions"
 	// "goModuls/Pointers"
 	// slice "goModuls/Slice"
@@ -12,6 +12,7 @@ import (
 	//conditionals "goModuls/Conditionals"
 	//loops "goModuls/Loops"
 	//arrays "goModuls/Arrays"
+	typesandstructs "goModuls/TypesAndStructs"
 )
 
 func main() {
@@ -28,15 +29,18 @@ func main() {
 	// Pointers.Process()
 	// maps.Process()
 	// ranges.Process()
-	nextINt := closures.IntSeq()
 
-	fmt.Println(nextINt())
-	fmt.Println(nextINt())
-	fmt.Println(nextINt())
+	// nextINt := closures.IntSeq()
 
-	newInts := closures.IntSeq()
-	fmt.Println(newInts())
-	fmt.Println("***********************")
-	fmt.Println(recursion.Fact(7))
+	// fmt.Println(nextINt())
+	// fmt.Println(nextINt())
+	// fmt.Println(nextINt())
+
+	// newInts := closures.IntSeq()
+	// fmt.Println(newInts())
+	// fmt.Println("***********************")
+	// fmt.Println(recursion.Fact(7))
+
+	typesandstructs.Process2()
 
 }

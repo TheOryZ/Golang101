@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-var s = "seven"
+//var s = "seven"
 
 func Process() {
 	s := "eight"
@@ -25,6 +25,14 @@ func Process() {
 	}
 
 	fmt.Println(user.FirstName, user.LastName, user.BirthDate, user.Age)
+
+	product := product{
+		name:      "Personel computer",
+		unitPrice: 15000,
+		brand:     "DELL",
+	}
+
+	fmt.Println(product)
 }
 
 /*Erişim belirleyici keyleri (public, private vs.) yoktur.
@@ -42,4 +50,10 @@ type user struct {
 	PhoneNumber string
 	Age         int
 	BirthDate   time.Time
+}
+
+type product struct {
+	name      string
+	unitPrice float64
+	brand     string
 }
