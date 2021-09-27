@@ -12,7 +12,8 @@ import (
 	//conditionals "goModuls/Conditionals"
 	//loops "goModuls/Loops"
 	//arrays "goModuls/Arrays"
-	typesandstructs "goModuls/TypesAndStructs"
+	"fmt"
+	"goModuls/channels"
 )
 
 func main() {
@@ -41,6 +42,21 @@ func main() {
 	// fmt.Println("***********************")
 	// fmt.Println(recursion.Fact(7))
 
-	typesandstructs.Process2()
+	// typesandstructs.Process2()
+	// go goroutines.EvenNumbers() //async
+	// go goroutines.OddNumbers()  //async
+
+	evenNumbersCn := make(chan int)
+	oddNumbersCn := make(chan int)
+	go channels.EvenNumbers(evenNumbersCn)
+	go channels.OddNumbers(oddNumbersCn)
+
+	//time.Sleep(4 * time.Second)
+	evenNumbersTotal, oddevenNumbersTotal := <-evenNumbersCn, <-oddNumbersCn
+	result := evenNumbersTotal * oddevenNumbersTotal
+	fmt.Println("Even Numbers : ", evenNumbersTotal)
+	fmt.Println("Odd Numbers : ", oddevenNumbersTotal)
+	fmt.Println("Result : ", result)
+	fmt.Println("Main is done!!")
 
 }
