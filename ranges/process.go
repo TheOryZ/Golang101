@@ -22,4 +22,12 @@ func Process() {
 		fmt.Print(k, " ")
 		fmt.Println(v)
 	}
+
+	kvs := map[string]string{"a": "apple", "b": "banana"}
+	for k, v := range kvs {
+		fmt.Printf("%s -> %s\n", k, v)
+	}
+	for k := range kvs {
+		fmt.Println("key:", k)
+	}
 }
