@@ -14,6 +14,7 @@ import (
 	//arrays "goModuls/Arrays"
 	"fmt"
 	"goModuls/channels"
+	"goModuls/interfacess"
 )
 
 func main() {
@@ -59,4 +60,10 @@ func main() {
 	fmt.Println("Result : ", result)
 	fmt.Println("Main is done!!")
 
+	//interfaces..
+	r := interfacess.Rect{Width: 3, Height: 4}
+	c := interfacess.Circle{Radius: 5}
+
+	interfacess.Measure(r)
+	interfacess.Measure(c)
 }
