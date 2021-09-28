@@ -13,6 +13,7 @@ import (
 	//loops "goModuls/Loops"
 	//arrays "goModuls/Arrays"
 	"fmt"
+	deferstatement "goModuls/DeferStatement"
 	"goModuls/channels"
 	"goModuls/interfacess"
 )
@@ -66,4 +67,8 @@ func main() {
 
 	interfacess.Measure(r)
 	interfacess.Measure(c)
+
+	//Defer Statement..
+	deferstatement.B()
+	deferstatement.Demo()
 }
