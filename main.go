@@ -15,6 +15,7 @@ import (
 	"fmt"
 	deferstatement "goModuls/DeferStatement"
 	"goModuls/channels"
+	errorhandling "goModuls/errorHandling"
 	"goModuls/interfacess"
 )
 
@@ -71,4 +72,7 @@ func main() {
 	//Defer Statement..
 	deferstatement.B()
 	deferstatement.Demo()
+
+	//Error Handling
+	errorhandling.Demo()
 }
