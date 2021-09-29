@@ -17,6 +17,7 @@ import (
 	"goModuls/channels"
 	errorhandling "goModuls/errorHandling"
 	"goModuls/interfacess"
+	stringfunctions "goModuls/stringFunctions"
 )
 
 func main() {
@@ -78,4 +79,8 @@ func main() {
 
 	message, err := errorhandling.GuessAgain(158)
 	fmt.Println(message, "ERROR :", err)
+
+	//stringfunctions
+
+	stringfunctions.Demo()
 }
