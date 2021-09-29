@@ -75,4 +75,7 @@ func main() {
 
 	//Error Handling
 	errorhandling.Demo()
+
+	message, err := errorhandling.GuessAgain(158)
+	fmt.Println(message, "ERROR :", err)
 }
