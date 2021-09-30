@@ -84,4 +84,5 @@ func main() {
 	// stringfunctions.Demo()
 
 	restful.Process()
+	restful.Process2()
 }
