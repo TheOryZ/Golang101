@@ -1,0 +1,32 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "productName": "Dummy Product 1",
+            "categoryId": 1,
+            "unitPrice": 5000.99
+        },
+        {
+            "id": 2,
+            "productName": "Dummy Product 2",
+            "categoryId": 1,
+            "unitPrice": 844.99
+        },
+        {
+            "id": 3,
+            "productName": "Dummy Product 3",
+            "categoryId": 2,
+            "unitPrice": 189.99
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "categoryName": "Dummy Category 1"
+        },
+        {
+            "id": 2,
+            "categoryName": "Dummy Category 2"
+        }
+    ]
+}
