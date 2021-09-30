@@ -1,24 +1,24 @@
 package main
 
-import (
-	// "fmt"
-	// "goModuls/closures"
-	// "goModuls/recursion"
-	// functions "goModuls/Functions"
-	// "goModuls/Pointers"
-	// slice "goModuls/Slice"
-	// "goModuls/maps"
-	// "goModuls/ranges"
-	//conditionals "goModuls/Conditionals"
-	//loops "goModuls/Loops"
-	//arrays "goModuls/Arrays"
-	"fmt"
-	deferstatement "goModuls/DeferStatement"
-	"goModuls/channels"
-	errorhandling "goModuls/errorHandling"
-	"goModuls/interfacess"
-	stringfunctions "goModuls/stringFunctions"
-)
+import "goModuls/restful"
+
+// "fmt"
+// "goModuls/closures"
+// "goModuls/recursion"
+// functions "goModuls/Functions"
+// "goModuls/Pointers"
+// slice "goModuls/Slice"
+// "goModuls/maps"
+// "goModuls/ranges"
+//conditionals "goModuls/Conditionals"
+//loops "goModuls/Loops"
+//arrays "goModuls/Arrays"
+// "fmt"
+// deferstatement "goModuls/DeferStatement"
+// "goModuls/channels"
+// errorhandling "goModuls/errorHandling"
+// "goModuls/interfacess"
+// stringfunctions "goModuls/stringFunctions"
 
 func main() {
 	//conditionals.Demo1()
@@ -50,37 +50,38 @@ func main() {
 	// go goroutines.EvenNumbers() //async
 	// go goroutines.OddNumbers()  //async
 
-	evenNumbersCn := make(chan int)
-	oddNumbersCn := make(chan int)
-	go channels.EvenNumbers(evenNumbersCn)
-	go channels.OddNumbers(oddNumbersCn)
+	// evenNumbersCn := make(chan int)
+	// oddNumbersCn := make(chan int)
+	// go channels.EvenNumbers(evenNumbersCn)
+	// go channels.OddNumbers(oddNumbersCn)
 
-	//time.Sleep(4 * time.Second)
-	evenNumbersTotal, oddevenNumbersTotal := <-evenNumbersCn, <-oddNumbersCn
-	result := evenNumbersTotal * oddevenNumbersTotal
-	fmt.Println("Even Numbers : ", evenNumbersTotal)
-	fmt.Println("Odd Numbers : ", oddevenNumbersTotal)
-	fmt.Println("Result : ", result)
-	fmt.Println("Main is done!!")
+	// //time.Sleep(4 * time.Second)
+	// evenNumbersTotal, oddevenNumbersTotal := <-evenNumbersCn, <-oddNumbersCn
+	// result := evenNumbersTotal * oddevenNumbersTotal
+	// fmt.Println("Even Numbers : ", evenNumbersTotal)
+	// fmt.Println("Odd Numbers : ", oddevenNumbersTotal)
+	// fmt.Println("Result : ", result)
+	// fmt.Println("Main is done!!")
 
-	//interfaces..
-	r := interfacess.Rect{Width: 3, Height: 4}
-	c := interfacess.Circle{Radius: 5}
+	// //interfaces..
+	// r := interfacess.Rect{Width: 3, Height: 4}
+	// c := interfacess.Circle{Radius: 5}
 
-	interfacess.Measure(r)
-	interfacess.Measure(c)
+	// interfacess.Measure(r)
+	// interfacess.Measure(c)
 
-	//Defer Statement..
-	deferstatement.B()
-	deferstatement.Demo()
+	// //Defer Statement..
+	// deferstatement.B()
+	// deferstatement.Demo()
 
-	//Error Handling
-	errorhandling.Demo()
+	// //Error Handling
+	// errorhandling.Demo()
 
-	message, err := errorhandling.GuessAgain(158)
-	fmt.Println(message, "ERROR :", err)
+	// message, err := errorhandling.GuessAgain(158)
+	// fmt.Println(message, "ERROR :", err)
 
-	//stringfunctions
+	// //stringfunctions
+	// stringfunctions.Demo()
 
-	stringfunctions.Demo()
+	restful.Process()
 }
