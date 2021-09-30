@@ -83,6 +83,7 @@ func main() {
 	// //stringfunctions
 	// stringfunctions.Demo()
 
-	restful.Process()
-	restful.Process2()
+	//restful.Process()
+	//restful.Process2()
+	restful.ContextExample()
 }
