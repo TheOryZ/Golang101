@@ -1,9 +1,5 @@
 package main
 
-import (
-	loops "goModuls/Loops"
-)
-
 // "fmt"
 // "goModuls/closures"
 // "goModuls/recursion"
@@ -24,7 +20,7 @@ import (
 
 func main() {
 	//conditionals.Demo1()
-	loops.Demo1()
+	//loops.Demo1()
 	//arrays.Demo1()
 	// slice.Process()
 	// slice.Process2()
