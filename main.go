@@ -1,6 +1,8 @@
 package main
 
-import "goModuls/restful"
+import (
+	loops "goModuls/Loops"
+)
 
 // "fmt"
 // "goModuls/closures"
@@ -22,7 +24,7 @@ import "goModuls/restful"
 
 func main() {
 	//conditionals.Demo1()
-	//loops.Demo1()
+	loops.Demo1()
 	//arrays.Demo1()
 	// slice.Process()
 	// slice.Process2()
@@ -85,5 +87,5 @@ func main() {
 
 	//restful.Process()
 	//restful.Process2()
-	restful.ContextExample()
+	//restful.ContextExample()
 }

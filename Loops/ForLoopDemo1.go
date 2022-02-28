@@ -4,7 +4,7 @@ import "fmt"
 
 func Demo1() {
 
-	var myString string = "Hellor world!"
+	var myString string = "Hello world!"
 
 	for i := 0; i < 5; i++ {
 		fmt.Println(myString)
@@ -15,8 +15,10 @@ func Demo1() {
 		j++
 	}
 
-	//fmt.Scanln();
-	scanVariables := 0
-	fmt.Scanln(&scanVariables)
-	fmt.Println(scanVariables)
+	//for but like while
+	sum := 1
+	for sum <= 10 {
+		sum += sum
+		fmt.Println(sum)
+	}
 }
