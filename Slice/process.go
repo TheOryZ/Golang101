@@ -24,4 +24,20 @@ func Process2() {
 	fmt.Println(cities[1:3])
 	fmt.Println(cities[1:])
 	fmt.Println(cities[:2])
+
+	myArray1 := [...]int{1, 2, 3}
+	//you can not add any item. If you use ... for length then u should set values to first line
+	fmt.Println(myArray1)
+
+	primes := [6]int{2, 3, 5, 7, 11, 13}
+
+	var s []int = primes[1:4]
+	fmt.Println(s)
+
+	myArray2 := [...]int{45, 23, 43}
+	mySlice1 := myArray2[:]
+	fmt.Println(mySlice1)
+	mySlice1[0] = 11
+	fmt.Println(mySlice1)
+	fmt.Println(myArray2)
 }
