@@ -40,4 +40,25 @@ func Process2() {
 	mySlice1[0] = 11
 	fmt.Println(mySlice1)
 	fmt.Println(myArray2)
+
+	var colors = []string{"Red", "Green", "Blue"}
+	fmt.Println(colors)
+	colors = append(colors, "Purple")
+	fmt.Println(colors)
+	colors = append(colors[1:len(colors)]) //slice üzerinden ilk elemanı silme
+	fmt.Println(colors)
+	colors = append(colors[:len(colors)-1]) //slice üzerinden son elemanı silme
+	fmt.Println(colors)
+
+	numbers := make([]int, 5, 5)
+	numbers[0] = 123
+	numbers[1] = 43
+	numbers[2] = 87
+	numbers[3] = 456
+	numbers[4] = 654
+	fmt.Println(numbers)
+	numbers = append(numbers, 342)
+	fmt.Println(numbers)
+	fmt.Println(cap(numbers))
+	fmt.Println(len(numbers))
 }
