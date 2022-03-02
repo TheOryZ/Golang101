@@ -1,6 +1,6 @@
 package main
 
-import slice "goModuls/Slice"
+import stringfunctions "goModuls/stringFunctions"
 
 // "fmt"
 // "goModuls/closures"
@@ -24,8 +24,8 @@ func main() {
 	//conditionals.Demo1()
 	//loops.Demo1()
 	//arrays.Demo1()
-	// slice.Process()
-	slice.Process2()
+	//slice.Process()
+	//slice.Process2()
 	// array_ := []int{4, 8, 15, 16, 23, 42}
 	// fmt.Println(functions.VariadicFunc(1, 2, 3, 4, 5))
 	// fmt.Println(functions.VariadicFunc(array_...))
@@ -81,7 +81,7 @@ func main() {
 	// fmt.Println(message, "ERROR :", err)
 
 	// //stringfunctions
-	// stringfunctions.Demo()
+	stringfunctions.Demo()
 
 	//restful.Process()
 	//restful.Process2()
