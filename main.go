@@ -1,6 +1,8 @@
 package main
 
-import stringfunctions "goModuls/stringFunctions"
+import (
+	stringfunctions "goModuls/stringFunctions"
+)
 
 // "fmt"
 // "goModuls/closures"
