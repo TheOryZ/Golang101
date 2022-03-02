@@ -2,6 +2,8 @@ package main
 
 import (
 	stringfunctions "goModuls/stringFunctions"
+
+	"github.com/fatih/color"
 )
 
 // "fmt"
@@ -88,4 +90,5 @@ func main() {
 	//restful.Process()
 	//restful.Process2()
 	//restful.ContextExample()
+	color.Cyan("Prints text in cyan.")
 }
