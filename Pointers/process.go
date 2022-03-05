@@ -19,3 +19,5 @@ func changeUsingPointer(s *string) {
 	newValue := "Red"
 	*s = newValue
 }
+
+//map ve slice için bir kopya oluşmaz. Pointer kullanmasak da pointer kullanmışız gibi davranır.
