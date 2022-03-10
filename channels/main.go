@@ -15,3 +15,7 @@ func OddNumbers(oddNumbersCn chan int) {
 	}
 	oddNumbersCn <- total
 }
+
+func main() {
+
+}
